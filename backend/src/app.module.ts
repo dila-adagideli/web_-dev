@@ -19,7 +19,7 @@ import { Enrollment } from './enrollments/entities/enrollment.entity';
       host: process.env.DB_HOST || 'localhost',
       port: parseInt(process.env.DB_PORT) || 3306,
       username: process.env.DB_USERNAME || 'root',
-      password: process.env.DB_PASSWORD || '2004.Dila',
+      password: process.env.DB_PASSWORD || '',
       database: process.env.DB_DATABASE || 'course_management',
       entities: [User, Course, Lesson, Category, Enrollment],
       synchronize: true, // Set to false in production
